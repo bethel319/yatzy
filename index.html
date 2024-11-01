@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatzy Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Yatzy Game</h1>
+
+        <!-- Dice Container -->
+        <div id="dice-container">
+            <div class="die" id="die1"></div>
+            <div class="die" id="die2"></div>
+            <div class="die" id="die3"></div>
+            <div class="die" id="die4"></div>
+            <div class="die" id="die5"></div>
+        </div>
+
+        <!-- Controls -->
+        <div id="controls">
+            <button id="roll-button">Roll Dice</button>
+            <button id="end-turn-button">End Turn</button>
+        </div>
+
+        <!-- Scorecard -->
+        <div id="scorecard">
+            <h2>Scorecard</h2>
+            <table>
+                <tr><td>Three of a Kind</td><td><span id="three-kind-score">0</span></td></tr>
+                <tr><td>Four of a Kind</td><td><span id="four-kind-score">0</span></td></tr>
+                <tr><td>Full House</td><td><span id="full-house-score">0</span></td></tr>
+                <tr><td>Small Straight</td><td><span id="small-straight-score">0</span></td></tr>
+                <tr><td>Large Straight</td><td><span id="large-straight-score">0</span></td></tr>
+                <tr><td>Yatzy</td><td><span id="yatzy-score">0</span></td></tr>
+                <tr><td>Chance</td><td><span id="chance-score">0</span></td></tr>
+                <tr><td><strong>Total Score</strong></td><td><strong><span id="total-score">0</span></strong></td></tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
